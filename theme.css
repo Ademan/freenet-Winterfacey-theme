@@ -1,0 +1,421 @@
+﻿/* clean-dropdown theme */
+
+/* navigation behavior */
+@import url(/static/behavior-dropdown.css);
+
+/* layout */
+@import url(/static/themes/clean/layout.css);
+
+/* color scheme */
+@import url(/static/themes/clean/color.css);
+
+/*
+ *
+ * Mostly stolen/adapted from Winterface
+ *
+ */
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: White;
+}
+
+a {
+  font-size: 11.9px;
+  color: #08c;
+}
+
+a:hover {
+  color: #005580;
+}
+
+.bookmarks-header-text {
+  color: #333;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+  padding-bottom: 30px;
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  margin-right: 1em;
+  background: none;
+}
+
+#topbar {
+  display: none;
+}
+
+/*
+ *
+ * Navbar
+ *
+ */
+
+#navbar:before {
+  display: block;
+  float: left;
+  content: url("http://127.0.0.1:8888/CHK@jrL1TD8AN6zP~zgBXP0wmH2IJJcgnDCNtB8f0-62a-g,hoNuI2ZRS5d7sH2w-7CXJC2~ODnEClBAJTuOFHxiOVQ,AAMC--8/logo-navbar.png");
+  margin-left: 5px;
+  margin-top: 2px;
+  width: 50px;
+  height: 35px;
+}
+
+div#page div#navbar {
+  top: 0px !important;
+}
+
+#navbar {
+  border-bottom: 1px solid rgb(37, 37, 37);
+  background-color: rgb(27, 27, 27) !important;
+  z-index: 9999;
+}
+
+#page #navbar {
+  position: sticky !important;
+}
+
+#navbar,
+#navlist,
+#navbar li {
+  background: none;
+  min-height: 40px;
+  text-align: center;
+}
+
+#navbar #navlist li a {
+  line-height: 40px;
+  color: rgb(153, 153, 153);
+  text-decoration: none !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+/*
+ *
+ * Second level
+ *
+ */
+#navbar #navlist .subnavlist,
+#navbar #navlist .subnavlist-selected,
+#navbar #navlist .subnavlist-not-selected {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  vertical-align: middle;
+}
+
+#navbar ul#navlist li ul,
+#navbar ul#navlist li ul li,
+#navbar ul#navlist li ul li a {
+  background: none;
+  /*line-height: 20px;*/
+  font-size: 14px;
+  text-transform: none;
+  color: #333;
+}
+
+#navbar ul#navlist li ul li a {
+  display: block;
+  margin-left: 0.5em;
+}
+
+#navbar ul#navlist li ul li {
+  text-align: left;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(51,51,51,0) 100%);
+}
+
+#navbar ul#navlist li ul {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#navbar ul#navlist li a:hover,
+#navbar ul#navlist li.navlist-not-selected a:hover,
+#navbar ul#navlist li a:hover {
+  background: none;
+}
+
+#navbar ul#navlist li ul li:hover {
+  color:#fff;
+  text-decoration:none;
+  background-color:#0081c2;
+  background-image:-moz-linear-gradient(top,#08c,#0077b3);
+  background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#0077b3));
+  background-image:-webkit-linear-gradient(top,#08c,#0077b3);
+  background-image:-o-linear-gradient(top,#08c,#0077b3);
+  background-image:linear-gradient(to bottom,#08c,#0077b3);
+  background-repeat:repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0077b3',GradientType=0)
+}
+
+#navbar ul#navlist li a {
+  display: inline;
+}
+
+#navbar ul#navlist li a:hover,
+#navbar ul#navlist li ul li a:hover {
+  color:#fff;
+}
+
+ul#navlist li ul li:first-child {
+  border-radius: 6px 6px 0px 0px;
+}
+
+ul#navlist li ul li:last-child {
+  border-radius: 0px 0px 6px 6px;
+}
+
+ul#navlist li ul.subnavlist {
+  top: 36px !important;
+}
+
+/*
+ *
+ * Infoboxes
+ *
+ */
+div.infobox {
+  border: none;
+  background: none;
+}
+
+div.infobox-success div.infobox-header,
+div.infobox-information div.infobox-header {
+  background: none;
+}
+
+div.infobox-header,
+.bookmarks-box ul#bookmarks li.cat {
+  color: #333;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+  padding-bottom: 30px;
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #eee;
+  background: none;
+}
+
+.infobox-success .infobox-header {
+  background-color: #8EE6A3;
+  border-radius: 6px;
+}
+
+/*
+ *
+ * Progress Bar
+ *
+ */
+
+/* conflicts base.css */
+
+div.progressbar {
+  height: 20px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  background-image: linear-gradient(to bottom,#f5f5f5,#f9f9f9);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  border: none;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+div.progressbar .progressbar-done {
+  background-color: #5eb95e;
+  background-image: linear-gradient(to bottom,#62c462,#57a957);
+  background-repeat: repeat-x;
+  height: 100%;
+}
+
+div.progressbar .progressbar-min {
+  height: 100%;
+}
+
+div.progressbar .progress_fraction_finalized {
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  font-weight: normal;
+  line-height: 20px;
+}
+
+/*
+ *
+ * Status bar
+ *
+ */
+
+div#statusbar {
+  border-top: 4px solid #eee;
+  background-color: White;
+}
+
+div#statusbar div.progressbar {
+  margin-top: 0.125em;
+  margin-bottom: 0.125em;
+}
+
+div#statusbar .separator {
+  background: none !important;
+}
+
+div#statusbar #statusbar-alerts {
+  height: 100%;
+}
+
+div#statusbar .infobox-content {
+  height: 100%;
+}
+
+div#statusbar a {
+  line-height: 200%;
+}
+
+/*
+ *
+ * Priority Legend
+ *
+ */
+table.queue {
+  margin-top: -2em;
+  width: 100%;
+  height: 40px;
+}
+
+table.queue td {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/*
+ *
+ * General Tables
+ *
+ */
+table tbody td,
+table {
+  border: none;
+}
+
+table tbody tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*
+ *
+ * Downloads/Uploads table
+ *
+ */
+table tbody tr.priority0:nth-child(2n) {
+  background-color: #E69E9E;
+}
+table tbody tr.priority1:nth-child(2n) {
+  background-color: #E6B58E;
+}
+table tbody tr.priority2:nth-child(2n) {
+  background-color: #E6D28E;
+}
+table tbody tr.priority3:nth-child(2n) {
+  background-color: #C4E68E;
+}
+table tbody tr.priority4:nth-child(2n) {
+  /*background-color: #74CC89;*/
+  background-color: #8EE6A3;
+}
+table tbody tr.priority5:nth-child(2n) {
+  background-color: #8EE6DF;
+}
+table tbody tr.priority6:nth-child(2n) {
+  background-color: #8EB1E6;
+}
+
+/*
+ *
+ * Bookmarks
+ *
+ */
+#bookmarks table {
+  /*width: 100%;*/
+}
+
+#bookmarks table tbody {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  align-content: center;
+  align-items: center;
+}
+
+#bookmarks table tr {
+  display: block;
+  flex: 0 1 auto;
+  align-self: auto;
+  min-width: 0;
+  min-height: 196px;
+  max-height: 256px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background: none;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 1em;
+
+  padding: 0.25em 0.25em 0.25em 0.25em;
+}
+
+#bookmarks table td {
+  display: block;
+  width: 256px;
+  background: none;
+}
+
+#bookmarks table td:nth-child(1) {
+  width: auto;
+  float: left;
+  clear: none;
+}
+
+#bookmarks table td a {
+  font-size: 21px;
+  font-weight: 200;
+  display: block;
+}
+
+/*
+ *
+ * Sone
+ *
+ */
+.reply,
+.click-to-show {
+  border-radius: 6px;
+}
+
+/* A bit hack-ey but it only applies to Sone pages! */
+body[id*="Sone"] {
+  background-color: #3a87ad;
+}
+
+#sone #notification-area {
+  margin-top: 0px;
+}
+
+#sone {
+  padding-top: 1em;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#page div#content {
+  top: 0px !important;
+  margin-top: 0px;
+}
