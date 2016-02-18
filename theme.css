@@ -185,8 +185,11 @@ div.infobox {
   background: none;
 }
 
+/* XXX: Clearing existing properties */
 div.infobox-success div.infobox-header,
-div.infobox-information div.infobox-header {
+div.infobox-information div.infobox-header,
+div.infobox-query div.infobox-header,
+div.infobox-alert div.infobox-header {
   background: none;
 }
 
