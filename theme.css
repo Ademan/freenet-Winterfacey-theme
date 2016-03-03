@@ -111,21 +111,22 @@ div#page div#navbar {
 #navbar ul#navlist li ul li,
 #navbar ul#navlist li ul li a {
   background: none;
-  /*line-height: 20px;*/
   font-size: 14px;
   text-transform: none;
   color: #333;
-}
-
-#navbar ul#navlist li ul li a {
-  display: block;
-  margin-left: 0.5em;
 }
 
 #navbar ul#navlist li ul li {
   text-align: left;
   border-bottom: 1px solid;
   border-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(51,51,51,0) 100%);
+  min-height: auto;
+}
+
+#navbar ul#navlist li ul li a {
+  display: block;
+  padding-left: 0.75em !important;
+  line-height: 3em;
 }
 
 #navbar ul#navlist li ul {
@@ -171,7 +172,8 @@ ul#navlist li ul li:last-child {
   border-radius: 0px 0px 6px 6px;
 }
 
-ul#navlist li ul.subnavlist {
+ul#navlist li ul.subnavlist,
+ul#navlist li ul.subnavlist-selected {
   top: 36px !important;
 }
 
@@ -189,6 +191,7 @@ div.infobox {
 div.infobox-success div.infobox-header,
 div.infobox-information div.infobox-header,
 div.infobox-query div.infobox-header,
+div.infobox-error div.infobox-header,
 div.infobox-alert div.infobox-header {
   background: none;
 }
